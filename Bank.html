@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Yes Bank</div>
+        <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+             <li><a href="#Holder">Holder Details</a></li>
+             <li><a href="#transaction-details">Transactions</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+     
+    <!-- Home Section -->
+    <section class="home">
+        <div class="hero-image">
+            <img src="./images/yes.png" alt="Banking Services" class="hero-img">
+        </div>
+        <div class="home-content">
+            <h1>Welcome to Yes Bank</h1>
+            <p>We provide secure and reliable banking services to help you manage your finances with ease.
+                 Whether you're looking to open an account, track your transactions, 
+                or learn more about our services, you've come to the right place.
+                YES BANK, a full-service commercial bank headquartered in Mumbai, offers a wide array of products, 
+                services, and digital solutions, catering to Retail, MSME, and Corporate clients.
+                 The Bank operates its Brokerage business through YES SECURITIES, 
+                a wholly-owned subsidiary of the Bank.</p>
+            <a href="#" class="btn-primary">Get Started</a>
+        </div>
+    </section>
+    
+    <section class="Holder">
+        <div class="form-container">
+            <h2>Holder Details</h2>
+            <form id="holder-form">
+                <div class="input-group">
+                    <label for="ifsc-code">IFSC Code</label>
+                    <input type="text" id="ifsc-code" name="ifsc-code" placeholder="Enter IFSC code" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="name">Account Holder's Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="branch">Branch Name</label>
+                    <input type="text" id="branch" name="branch" placeholder="Enter Branch Name" required>
+                </div>
+    
+                <div class="submit-btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Transaction Section -->
+    <section class="transaction-details">
+        <div class="form-container">
+            <h2>Transaction Details</h2>
+            <form id="transaction-form">
+                <div class="input-group">
+                    <label for="transaction-id">Transaction ID</label>
+                    <input type="text" id="transaction-id" name="transaction-id" placeholder="Enter Transaction ID" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="amount">Transaction Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter Amount" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="date">Transaction Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+    
+                <div class="submit-btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Section to Display Saved Data -->
+    <section class="saved-details">
+        <div class="form-container">
+            <h2>Saved Details</h2>
+            <div id="saved-holder-details"></div>
+            <div id="saved-transaction-details"></div>
+        </div>
+        
+    </section>
+    
+</script>
+    
+    
+
+</body>
+</html>
+
